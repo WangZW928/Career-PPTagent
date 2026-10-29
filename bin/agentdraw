@@ -1,0 +1,9 @@
+#!/bin/bash
+set -euo pipefail
+source "$(dirname -- "${BASH_SOURCE[0]}")/../scripts/runtime-env.sh"
+CLI="$PPTAGENT_RUNTIME/illustrations/node_modules/.bin/agentdraw"
+if [[ ! -x "$CLI" ]]; then
+  echo 'AgentDraw CLI missing. Run scripts/setup-illustrations.sh.' >&2
+  exit 1
+fi
+exec "$CLI" "$@"

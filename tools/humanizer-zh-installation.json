@@ -1,0 +1,8 @@
+{
+  "repository": "https://github.com/op7418/Humanizer-zh",
+  "commit": "f4518a8eab97b8bfebc66a89d34320a89bef6930",
+  "date": "2026-10-26",
+  "project_skill": ".agents/skills/humanizer-zh",
+  "skill_sha256": "95627fd4437d886f98032ccc62d79136e6310f1fc04e354bb86431795ff206df",
+  "integration": "PPTAgent final Chinese copy review before final rendering/build; preserve facts and qualifiers; revalidate layout after edits"
+}

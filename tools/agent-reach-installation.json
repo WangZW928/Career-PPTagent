@@ -1,0 +1,10 @@
+{
+  "repository": "https://github.com/Panniantong/Agent-Reach",
+  "commit": "14c213405669414492bda0f8d52cc6531d062c45",
+  "version": "1.6.0",
+  "date": "2026-10-26",
+  "installation": "uv tool; official skill-installer; agent-reach skill link",
+  "project_skill": ".agents/skills/agent-reach",
+  "validation": "version command and skill validation passed; doctor run; platform live access not tested",
+  "bilibili": "needs_setup; bili-cli not installed"
+}

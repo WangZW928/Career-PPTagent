@@ -1,0 +1,7 @@
+#!/bin/bash
+set -euo pipefail
+source "$(dirname -- "${BASH_SOURCE[0]}")/../scripts/runtime-env.sh"
+SKILL_ROOT="$PROJECT_ROOT/.agents/skills/pptagent"
+require_pptagent_python
+export PATH="$PROJECT_ROOT/bin:$PATH"
+exec "$PPTAGENT_PYTHON" "$SKILL_ROOT/scripts/pptagent.py" "$@"

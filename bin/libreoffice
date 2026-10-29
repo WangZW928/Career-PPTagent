@@ -1,0 +1,10 @@
+#!/bin/bash
+set -euo pipefail
+source "$(dirname -- "${BASH_SOURCE[0]}")/../scripts/runtime-env.sh"
+if [[ "$PPTAGENT_OS" == macos ]]; then
+  OFFICE="$PPTAGENT_RUNTIME/apps/LibreOffice.app/Contents/MacOS/soffice"
+else
+  OFFICE="${PPTAGENT_LIBREOFFICE:-/usr/bin/libreoffice}"
+fi
+[[ -x "$OFFICE" ]] || { echo "LibreOffice missing: $OFFICE" >&2; exit 1; }
+exec "$OFFICE" "$@"

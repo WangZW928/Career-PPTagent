@@ -1,0 +1,12 @@
+~$*.ppt*
+.DS_Store
+Thumbs.db
+
+# Local PPTAgent runtime and generated validation artifacts
+.runtime/
+outputs/
+**/__pycache__/
+**/.pytest_cache/
+.env
+.env.*
+!.env.example

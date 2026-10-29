@@ -1,0 +1,5 @@
+{
+  "dependencies": {
+    "@aidraw/agentdraw": "0.1.28"
+  }
+}

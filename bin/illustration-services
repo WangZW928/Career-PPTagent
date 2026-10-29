@@ -1,0 +1,5 @@
+#!/bin/bash
+set -euo pipefail
+source "$(dirname -- "${BASH_SOURCE[0]}")/../scripts/runtime-env.sh"
+require_pptagent_python
+exec "$PPTAGENT_PYTHON" "$PROJECT_ROOT/scripts/illustration-services.py" "$@"

@@ -1,0 +1,14 @@
+{
+  "type": "flowchart",
+  "title": "优化验证流程",
+  "nodes": [
+    {"id": "input", "label": "输入程序", "category": "client"},
+    {"id": "verify", "label": "正确性验证", "category": "service"},
+    {"id": "result", "label": "性能评测", "category": "service"}
+  ],
+  "edges": [
+    {"from": "input", "to": "verify"},
+    {"from": "verify", "to": "result"}
+  ],
+  "meta": {"direction": "LR"}
+}
